@@ -21,19 +21,19 @@ class AddPeminjamanView extends GetView<AddPeminjamanController> {
               children: [
                 TextFormField(
                     controller: controller.tanggalPinjamController,
-                    decoration: InputDecoration(hintText: "Masukkan Nama"),
+                    decoration: InputDecoration(hintText: "Masukkan Tanggal Pinjam"),
                     validator: (value) {
                       if (value!.isEmpty) {
-                        return "Nama tidak boleh kosong";
+                        return "Tanggal tidak boleh kosong";
                       }
                       return null;
                     }),
                 TextFormField(
                     controller: controller.tanggalKembaliController,
-                    decoration: InputDecoration(hintText: "Masukkan Username"),
+                    decoration: InputDecoration(hintText: "Masukkan Tanggal Kembali"),
                     validator: (value) {
                       if (value!.isEmpty) {
-                        return "Username tidak boleh kosong";
+                        return "Tanggal tidak boleh kosong";
                       }
                       return null;
                     }),
